@@ -35,10 +35,3 @@ app.use("/", genl_routes);
 
 app.listen(PORT,()=>console.log("Server is running"));
 
-
-// const token=req.query
-// const user=jwt.validate(token,esmeRamz).user;
-// const foundUser=users.find(id=>user.id==id)
-// if(foundUser)
-// next();
-// else return res().send('you have not logged in');
