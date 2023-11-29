@@ -27,6 +27,8 @@ public_users.get('/', function (req, res) {
   return res.status(200).send(bookList);
 });
 
+// ***************** TASK 10 *******************
+
 // public_users.get('/', async function (req, res) {
 //   try {
 //     const response = await axios.get(`api_endpoint/books`);
@@ -50,6 +52,8 @@ public_users.get('/isbn/:isbn', function (req, res) {
     return res.status(404).json({ message: "Book not found" });
   }
 });
+
+// ***************** TASK 11 *******************
 
 // public_users.get('/isbn/:isbn',async function (req,res){
 //   try{
@@ -78,6 +82,8 @@ public_users.get('/author/:author', function (req, res) {
   }
 });
 
+// ***************** TASK 12 *******************
+
 // public_users.get('/author/:author', async function (req, res) {
 //   const author = req.params.author;
 
@@ -105,6 +111,8 @@ public_users.get('/title/:title', function (req, res) {
     return res.status(404).json({ message: "No books found with this title" });
   }
 });
+
+// ***************** TASK 13 *******************
 
 // public_users.get('/title/:title', async function (req, res) {
 //   const title = req.params.title;
